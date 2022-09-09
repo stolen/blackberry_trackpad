@@ -24,13 +24,14 @@ The cable is 0.3mm dual-row FPC with notches (used to prevent slipping out of co
 |    |  7 |GND     |      |
 | 6  |    |VDDA, VDDIO, VLED+|+2.6V..3.3V|
 |    |  5 |DVDD    |+1.8V |
-| 4  |    |Backlight LED -|e.g. 4.7K resistor to MCU open drain output|
-|    |  3 |Backlight LED +|e.g. +3.3V|
+| 4  |    |Backlight LED +|e.g. 3.3V|
+|    |  3 |Backlight LED -|e.g. 200 Ohm resistor to MCU open drain output|
 | 2  |    |Dome switch B||
 |    |  1 |Dome switch A||
 
-I could not determine which connector is 100% compatible with this cable (notches are usually somwhere else).
-Hirose FH35C-17S seems to be OK here (it didn't arrive yet), just two pins on each side are not connected.
+I could not determine which connector is 100% compatible with this cable (notches are usually somwhere else).  
+Hirose FH35C-17S seems to be OK here, just two pins on each side are not connected. The FPC is too thin (0.1 mm instead of 0.2 mm), so I added a bit of kapton tape.  
+Also counterfeit chinese connector (white instead of brown) seems to have wrong internal dimensions, so I had to adjust a cable position in it.
 
 ### 2. Voltages
 Seems like noone tried to find the datasheet. All circuits with these sensors use 2.8V regulators
